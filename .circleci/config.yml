@@ -1,0 +1,21 @@
+# This config is equivalent to both the '.circleci/extended/orb-free.yml' and the base '.circleci/config.yml'
+version: 2.1
+
+jobs:
+  build-for-linux:
+    docker:
+      - image: cimg/base:2021.07
+    steps:
+      - run: sudo apt-get update -y
+      - run: sudo apt-get update
+      - run: sudo apt-get install cmake
+      - run: sudo apt-get install build-essential
+      - run: sudo apt-get install autoconf automake gdb libffi-dev zlib1g-dev libssl-dev
+      - run: git clone https://github.com/RentMe2/RateLimiter.git
+      - run: cd RateLimiter && sudo mkdir build && cd build && pwd && ls && sudo cmake .. && sudo make
+
+workflows:
+  version: 2.1
+  build:
+    jobs:
+      - build-for-linux
