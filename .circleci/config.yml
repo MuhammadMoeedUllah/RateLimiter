@@ -11,7 +11,7 @@ jobs:
       - run: sudo apt-get install cmake
       - run: sudo apt-get install build-essential
       - run: sudo apt-get install autoconf automake gdb libffi-dev zlib1g-dev libssl-dev
-      - run: git clone https://github.com/RentMe2/RateLimiter.git
+      - run: git clone https://github.com/MuhammadMoeedUllah/RateLimiter.git
       - run: cd RateLimiter && sudo mkdir build && cd build && pwd && ls && sudo cmake .. && sudo make
 
 workflows:

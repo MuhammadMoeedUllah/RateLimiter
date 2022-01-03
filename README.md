@@ -1,5 +1,5 @@
 # RateLimiter
-![CircleCI](https://circleci.com/gh/RentMe2/RateLimiter.svg?style=shield)
+![CircleCI](https://circleci.com/gh/MuhammadMoeedUllah/RateLimiter.svg?style=shield)
 ![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/MuhammadMoeedUllah/52019294b0eaaae8927f305e7c1b7052/raw/test.json)
 
 
